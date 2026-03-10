@@ -32,7 +32,7 @@ def win(current_game):
             print(f"Player {check[0]} wins vertically!")
             return True
 
-    # Diagonal (\$$
+    # Diagonal (\)
     diags = [current_game[i][i] for i in range(len(current_game))]
     if all_same(diags):
         print(f"Player {diags[0]} wins diagonally (\$$!")
@@ -74,4 +74,5 @@ while play:
                 play = False
             else:
                 print("Not a valid answer, but cya!")
+
                 play = False   
